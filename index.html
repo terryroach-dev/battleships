@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terry's Battleships</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="hide" id="turn"></section>
+    <div class="container">
+      <section id="opening-page">
+        <h3 id="title">Battleships by Terry</h3>
+        <p class="intro">
+          Welcome to the digital battleground of Battleships! Command your fleet
+          on the virtual ocean grid, outsmart the computer with precise strikes
+          and clever tactics. Will you emerge victorious, or will the computer
+          sink your fleet? Prepare for a quick and intense naval showdown that
+          will test your strategic prowess. May the best tactician win!
+        </p>
+        <button class="btn" id="start-game-btn">Start</button>
+      </section>
+      <section id="setup-instructions" class="hide">
+        <ol>
+          <li>Place 5 ships in length order, 5, 4, 3, 3, 2</li>
+          <li>
+            Click the square where your ship will start, it will go across to
+            the right or downwards*
+          </li>
+          <li>Choose from the choice of ending squares</li>
+          <p>
+            *If your ship will not fit to the right and downwards you will not
+            be able to start it at that square
+          </p>
+          <li>Click 'Confirm Positions' button when all ships are placed</li>
+        </ol>
+      </section>
+      <section class="comp-section hide">
+        <p class="participant">Computer's Grid</p>
+        <div class="grid comp-grid" id="comp-grid"></div>
+      </section>
+      <section class="player-section hide">
+        <p class="participant">Player's Grid</p>
+        <div class="grid player-grid" id="player-grid"></div>
+        <button class="btn hide" id="confirm-positions">
+          Confirm Positions
+        </button>
+      </section>
+      <div class="message hide" id="message"></div>
+      <button class="btn hide" id="play-again">Play Again</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

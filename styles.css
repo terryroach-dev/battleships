@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.5);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+  }
+}
+
+#title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+#turn {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0.5em 0;
+}
+
+.intro {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+.btn {
+  background-color: red;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
+  border: none;
+  padding: 0.75em 1.5em;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: green;
+}
+
+.comp-section {
+  background-color: lightblue;
+  padding-bottom: 20px;
+}
+.player-section {
+  background-color: lightcoral;
+  padding-bottom: 20px;
+}
+
+.participant {
+  font-size: 1.5em;
+}
+
+#setup-instructions {
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+#confirm-positions {
+  margin: 0 auto;
+  margin-top: 1.25em;
+  width: 70%;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 50%;
+  border: black solid 2px;
+  background-color: grey;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.grid {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.grid-square {
+  width: 30px;
+  height: 30px;
+  border: 1px solid greenyellow;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.empty,
+.comp-ship {
+  background-color: blue;
+}
+
+.player-selected {
+  background-color: purple;
+}
+.player-option {
+  background-color: yellow;
+}
+.ship {
+  background-color: grey;
+}
+.miss {
+  background-color: black;
+}
+.hit {
+  background-color: red;
+}
+.sunk {
+  background-color: green;
+}
